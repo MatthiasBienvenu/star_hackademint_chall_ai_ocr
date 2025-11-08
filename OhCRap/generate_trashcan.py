@@ -15,13 +15,14 @@ def rd_word(l: int) -> str:
     )
 
 # returns n_words words including the secret
-def get_words(n_words: int) -> list[str]:
+def get_words(n_words: int) -> tuple[list[str], str]:
     secret = rd_word(5) + "gWILheRm" + rd_word(3)
 
     words = []
     for _ in range(n_words):
         w = rd_word(len(secret))
-        while w == secret: w = rd_word(len(secret))
+        while w == secret:
+            w = rd_word(len(secret))
 
         words.append(w)
 
