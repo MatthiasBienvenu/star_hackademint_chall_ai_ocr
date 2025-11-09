@@ -15,14 +15,13 @@ def rd_word(l: int) -> str:
     )
 
 # returns n_words words including the secret
-def get_words(n_words: int) -> tuple[list[str], str]:
-    secret = rd_word(5) + "gWILheRm" + rd_word(3)
+def get_words(n_words: int) -> list[str]:
+    secret = rd_word(3) + "LyoKO" + rd_word(3)
 
     words = []
     for _ in range(n_words):
         w = rd_word(len(secret))
-        while w == secret:
-            w = rd_word(len(secret))
+        while w == secret: w = rd_word(len(secret))
 
         words.append(w)
 
@@ -52,4 +51,4 @@ def create_image(text: str) -> Image.Image:
 words, secret = get_words(500)
 for i, w in enumerate(words):
     img = create_image(w)
-    img.save(f"corbeille/{i}.png")
+    img.save(f"corbeille/{i}.jpg", "JPEG", quality=95)
