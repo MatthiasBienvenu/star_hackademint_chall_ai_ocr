@@ -10,7 +10,7 @@ To find the right password, you'll need to search through all this mess. Fortuna
 
 **Challenge Goal:** Find the image containing the password among all the trash!
 
-⚠️ **Note:** The solution may take a few minutes to run.
+**Note:** The solution may take a few minutes to run.
 
 ## What Solvers Get
 
@@ -74,7 +74,7 @@ python solution.py
 
 The script will print the filename that contains the secret password.
 
-⏱️ **Processing time:** The solution may take several minutes to complete as it processes all images with multiple rotation candidates.
+**Processing time:** The solution may take several minutes to complete as it processes all images with multiple rotation candidates.
 
 ## Technical Details
 
@@ -107,15 +107,3 @@ The script will print the filename that contains the secret password.
 - Tuning thresholds, font size, or adding additional preprocessing (denoising, contrast adjustment) may improve results
 - Alternative solutions using different OCR engines or machine learning approaches are possible
 - Processing 500 images with 4 rotation candidates each (2000 OCR operations) takes time — be patient!
-
-## License
-
-MIT License — See [LICENSE](LICENSE) for details.
-
-Copyright (c) 2025 MatthiasBienvenu
-
----
-
-**Happy Hacking! 🎯**
-
-*Part of star.hackademint.org CTF 2025*
